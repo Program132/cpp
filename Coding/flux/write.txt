@@ -1,0 +1,2 @@
+My new sentence in the file
+My second new sentence !
