@@ -86,6 +86,33 @@ _3rd_
     }
 ```
 
+
+_4th_
+
+```cpp
+    #include <iostream>
+    #include <string>
+    #include <unordered_map>
+
+    int main()
+    {
+        using namespace std::literals;
+
+        std::unordered_map<std::string, std::string> dict
+        {
+            { "My name of the line"s, "My value of the line"s },
+        };
+
+        for (auto const & paire : dict)
+        {
+            std::cout << "Name : " << paire.first << std::endl;
+            std::cout << "Value : " << paire.second << std::endl << std::endl;
+        }
+
+        return 0;
+    }
+```
+
 ## Use/Run my example
 
 To use my example, you must have [MinGW](https://sourceforge.net/projects/mingw/files/latest/download)
