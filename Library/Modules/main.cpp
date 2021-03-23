@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <array>
 #include "math.hpp"
 #include "flux.hpp"
 #include "tab.hpp"
@@ -37,10 +39,20 @@ int main()
     std::vector<double> d {15.5, 10.25, 19.5, 5.25};
     std::vector<char> c {'a', 'b' ,'d', 'e', 'f', 'g'};
 
-    std::cout << tab.strSTab(n) << std::endl;
-    std::cout << tab.strITab(i) << std::endl;
-    std::cout << tab.strDTab(d) << std::endl;
-    std::cout << tab.strCTab(c) << std::endl;
+    std::array<std::string, 5> const na {"Program", "Program132", "Program Entertainment", "PE", "pe"};
+    std::array<int, 2> const in {5, 10};
+    std::array<double, 1> const dou {10.5};
+    std::array<char, 4> const ch {'A', 'B', 'C', 'D'};
+
+    tab.show(n);
+    tab.show(i);
+    tab.show(d);
+    tab.show(c);
+
+    tab.show(na);
+    tab.show(in);
+    tab.show(dou);
+    tab.show(ch);
 
     return 0;
 }
