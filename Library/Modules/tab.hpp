@@ -1,18 +1,24 @@
 #ifndef TAB_HPP
 #define TAB_HPP
 
+#include <iostream>
 #include <string>
 #include <vector>
+#include <array>
 
 namespace N
-{
+{	
 	class Tab
 	{
-	public:
-		std::string strSTab(std::vector<std::string> tab);
-		int strITab(std::vector<int> tab);
-		double strDTab(std::vector<double> tab);
-		char strCTab(std::vector<char> tab);
+		public:
+			template <typename tab>
+			void show(tab const target)
+			{
+				for (auto const e : target)
+				{
+					std::cout << e << std::endl;
+				}
+			}
 	};
 }
 
