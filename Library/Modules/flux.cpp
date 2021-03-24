@@ -5,7 +5,7 @@
 
 using namespace N;
 
-std::string Flux::read(std::string file)
+std::string Flux::read(std::string const&  file)
 {
     std::ifstream myFile {file};
 
@@ -19,7 +19,7 @@ std::string Flux::read(std::string file)
     }
 }
 
-void Flux::write(std::string file, std::string arg)
+void Flux::write(std::string const& file, std::string const& arg)
 {
     std::ofstream myFile {file};
 

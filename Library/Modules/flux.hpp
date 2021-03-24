@@ -8,8 +8,8 @@ namespace N
 	class Flux
 	{
 	public:
-		std::string read(std::string file);
-		void write(std::string file, std::string arg);
+		std::string read(std::string const& file);
+		void write(std::string const& file, std::string const& arg);
 	};
 }
 

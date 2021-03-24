@@ -12,15 +12,15 @@ namespace N
     {
         public:
             template <typename tab>
-            void show(tab const target)
+            void show(tab const& target)
             {
-                for (auto const e : target)
+                for (auto const & e : target)
                 {
                     std::cout << e << std::endl;
                 }
             }
             template <typename tab>
-        	std::string getCase(tab const target, int i)
+        	std::string getCase(tab const& target, int const& i)
             {
 				std::string a = target[i];
 				return a;

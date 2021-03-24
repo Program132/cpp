@@ -7,22 +7,22 @@ namespace N
 	{
 	public:
 		template <typename m>
-		m add(m a, m b)
+		m add(m const& a, m const& b)
 		{
 			return a + b;
 		}
 		template <typename m>
-		m remove(m a, m b)
+		m remove(m const& a, m const& b)
 		{
 			return a - b;
 		}
 		template <typename m>
-		m multi(m a, m b)
+		m multi(m const& a, m const& b)
 		{
 			return a * b;
 		}
 		template <typename m>
-		m divi(m a, m b)
+		m divi(m const& a, m const& b)
 		{
 			return a / b;
 		}
