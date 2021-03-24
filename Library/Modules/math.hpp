@@ -6,10 +6,26 @@ namespace N
 	class Math
 	{
 	public:
-		double add(double a, double b);
-		double remove(double a, double b);
-		double multi(double a, double b);
-		double divi(double a, double b);
+		template <typename m>
+		m add(m a, m b)
+		{
+			return a + b;
+		}
+		template <typename m>
+		m remove(m a, m b)
+		{
+			return a - b;
+		}
+		template <typename m>
+		m multi(m a, m b)
+		{
+			return a * b;
+		}
+		template <typename m>
+		m divi(m a, m b)
+		{
+			return a / b;
+		}
 	};
 }
 

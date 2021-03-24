@@ -14,6 +14,8 @@ int main()
     Flux flux;
     Tab tab;
 
+    std::cout << "-------" << std::endl;
+
     auto a = math.add(5, 10);
     std::cout << a << std::endl;
     a = math.remove(20, 7);
@@ -23,6 +25,8 @@ int main()
     a = math.multi(10, 100);
     std::cout << a << std::endl;
 
+
+    std::cout << "-------" << std::endl;
 
 
     std::string file {"file.txt"};
@@ -44,6 +48,8 @@ int main()
     std::array<double, 1> const dou {10.5};
     std::array<char, 4> const ch {'A', 'B', 'C', 'D'};
 
+    std::cout << "-------" << std::endl;
+
     tab.show(n);
     tab.show(i);
     tab.show(d);
@@ -53,6 +59,13 @@ int main()
     tab.show(in);
     tab.show(dou);
     tab.show(ch);
+
+    std::cout << "-------" << std::endl;
+
+    auto t  = tab.getCase(n, 1);
+    std::cout << t << std::endl;
+    t  = tab.getCase(n, 0);
+    std::cout << t << std::endl;
 
     return 0;
 }
