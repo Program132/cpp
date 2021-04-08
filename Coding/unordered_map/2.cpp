@@ -14,7 +14,7 @@ int main()
     for (auto const & paire : dictionnaire)
     {
         std::cout << "Name : " << paire.first << std::endl;
-        std::cout << "Value : " << paire.second << std::endl << std::endl;
+        std::cout << "Value : " << paire.second << std::endl;
     }
 
     return 0;
